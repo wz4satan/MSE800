@@ -105,7 +105,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Rpuxl0qhgzl8hAU7FL_C" name="Money Exchange System - Admin Portal">
-    <mxGraphModel dx="640" dy="648" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0" adaptiveColors="auto">
+    <mxGraphModel dx="836" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0" adaptiveColors="auto">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -167,19 +167,6 @@
           <mxGeometry relative="1" width="160" as="geometry">
             <mxPoint x="120" y="420" as="sourcePoint" />
             <mxPoint x="280" y="420" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="kn1M5licPolIx9PQfjGM-1" edge="1" parent="cFp2gDEtoveiZNx1lZce-2" source="cFp2gDEtoveiZNx1lZce-10" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;curved=0;" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
-          <mxGeometry relative="1" width="160" x="0.0833" as="geometry">
-            <mxPoint as="offset" />
-            <Array as="points">
-              <mxPoint x="110" y="350" />
-              <mxPoint x="150" y="350" />
-              <mxPoint x="150" y="310" />
-              <mxPoint x="330" y="310" />
-            </Array>
-            <mxPoint x="210" y="330" as="sourcePoint" />
-            <mxPoint x="330" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="cFp2gDEtoveiZNx1lZce-13" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="&lt;div&gt;Anti-Money Laundering (AML) System&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
