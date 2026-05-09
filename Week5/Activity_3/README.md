@@ -1,6 +1,6 @@
 # Clinic System Workflow - Activity Diagram
 
-![Clinic Activity Diagram](Week5/Activity_3/Clinic System.png)
+![Clinic Activity Diagram](MSE800/Week5/Activity_3/Clinic System.png)
 
 ## Purpose
 This activity diagram models the comprehensive operational workflow of a clinic system. It captures the end-to-end patient journey, starting from the initial appointment request through to the final medication dispensing. The diagram utilizes vertical swimlanes to clearly separate the responsibilities of administrative staff, medical professionals, and the patient, while also illustrating both the "happy path" (successful consultation) and alternative flows (scheduling conflicts leading to cancellations and refunds).
