@@ -40,20 +40,20 @@ merged_dict = {
 """
 merged_dict = {
     **{k: v for k, v in student1.items() if "ex" in student1["name"].lower()},
-    **{k: v for k, v in student1.items() if "ex" in student2["name"].lower()},
-    **{k: v for k, v in student1.items() if "ex" in student3["name"].lower()},
+    **{k: v for k, v in student2.items() if "ex" in student2["name"].lower()},
+    **{k: v for k, v in student3.items() if "ex" in student3["name"].lower()},
 }
 
 merged_dict2 = {
     **{k: v for k, v in student1.items() if student1["name"].lower() in "ex"},
-    **{k: v for k, v in student1.items() if student2["name"].lower() in "ex"},
-    **{k: v for k, v in student1.items() if student3["name"].lower() in "ex"},
+    **{k: v for k, v in student2.items() if student2["name"].lower() in "ex"},
+    **{k: v for k, v in student3.items() if student3["name"].lower() in "ex"},
 }
 
 merged_dict3 = {
     **{k: v for k, v in student1.items() if k == "name" and "o" in str(v)},
-    **{k: v for k, v in student1.items() if k == "name" and "o" in str(v)},
-    **{k: v for k, v in student1.items() if k == "name" and "o" in str(v)}
+    **{k: v for k, v in student2.items() if k == "name" and "o" in str(v)},
+    **{k: v for k, v in student3.items() if k == "name" and "o" in str(v)}
 }
 
-print(merged_dict)
+print(merged_dict3)
