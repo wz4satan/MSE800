@@ -1,0 +1,45 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="-9aSZ6zTFRdUlqiPvsOa">
+    <mxGraphModel dx="761" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vciG1RQbYpvPl5rfGR0L-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="GeneralFlight" vertex="1">
+          <mxGeometry height="200" width="240" x="300" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vciG1RQbYpvPl5rfGR0L-2" parent="vciG1RQbYpvPl5rfGR0L-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ flight_number : str&amp;nbsp;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&lt;/span&gt;&amp;nbsp;aircraft_type : str&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&lt;/span&gt;&amp;nbsp;dep_airport : str&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&lt;/span&gt;&amp;nbsp;arr_airport : str&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&lt;/span&gt;&amp;nbsp;depart_time : str&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&lt;/span&gt;&amp;nbsp;passenger_count: int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="94" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vciG1RQbYpvPl5rfGR0L-3" parent="vciG1RQbYpvPl5rfGR0L-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="10" width="240" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="vciG1RQbYpvPl5rfGR0L-4" parent="vciG1RQbYpvPl5rfGR0L-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ display_route(): str&lt;div&gt;+ display_flight_info():&amp;nbsp; void&lt;/div&gt;&lt;div&gt;+ calculate_base_fare(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;flight_distance_km: float&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;): float&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="240" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="vciG1RQbYpvPl5rfGR0L-5" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="DomesticFlight" vertex="1">
+          <mxGeometry height="110" width="250" x="295" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="vciG1RQbYpvPl5rfGR0L-6" parent="vciG1RQbYpvPl5rfGR0L-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+&amp;nbsp;domestic_tax_rate : float" vertex="1">
+          <mxGeometry height="24" width="250" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vciG1RQbYpvPl5rfGR0L-7" parent="vciG1RQbYpvPl5rfGR0L-5" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="10" width="250" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vciG1RQbYpvPl5rfGR0L-8" parent="vciG1RQbYpvPl5rfGR0L-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ display_flight_info(): void&lt;div&gt;+ calculate_final_fare(&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;flight_distance_km: float&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;)&lt;/span&gt;: float&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="250" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vciG1RQbYpvPl5rfGR0L-12" edge="1" parent="1" source="vciG1RQbYpvPl5rfGR0L-5" style="endArrow=block;startArrow=circlePlus;endFill=0;startFill=0;endSize=8;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.489;entryY=1.017;entryDx=0;entryDy=0;entryPerimeter=0;" target="vciG1RQbYpvPl5rfGR0L-4" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="389.46000000000004" y="341.97" as="sourcePoint" />
+            <mxPoint x="390.53999999999996" y="257.99800000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vciG1RQbYpvPl5rfGR0L-14" connectable="0" parent="vciG1RQbYpvPl5rfGR0L-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="inherits" vertex="1">
+          <mxGeometry relative="1" x="0.0196" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
