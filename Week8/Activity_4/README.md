@@ -13,8 +13,8 @@ The system is built on four core classes, demonstrating a robust multiple-inheri
 * **`DomesticFlight` (Child Class 1):** Inherits from both `GeneralFlight` and `BasicAmenities`. It extends the system to handle domestic tax calculations and domestic baggage claim announcements.
 * **`InternationalFlight` (Child Class 2):** Inherits from both `GeneralFlight` and `BasicAmenities`. It extends the system to handle complex international surcharges, passport verifications, duty-free shopping, full meal selections, and customs clearance data processing.
 
-### Inheritance Structure (Text Representation)
-![alt text](PixPin_2026-05-31_17-38-21.jpg)
+### Inheritance Structure 
+![alt text](Update_nz_airline_class_diagram.jpg)
 
 ## Project Files
 
