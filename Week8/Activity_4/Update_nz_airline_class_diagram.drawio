@@ -1,0 +1,105 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="PJxwuhERYu36IV10AAK1">
+    <mxGraphModel dx="827" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-9" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="GeneralFlight" vertex="1">
+          <mxGeometry height="200" width="240" x="150" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-10" parent="Z8Aswdf3FcaWcjXtzo5U-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ flight_number : str&amp;nbsp;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&lt;/span&gt;&amp;nbsp;aircraft_type : str&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&lt;/span&gt;&amp;nbsp;dep_airport : str&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&lt;/span&gt;&amp;nbsp;arr_airport : str&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&lt;/span&gt;&amp;nbsp;depart_time : str&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&lt;/span&gt;&amp;nbsp;passenger_count: int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="94" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-11" parent="Z8Aswdf3FcaWcjXtzo5U-9" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="10" width="240" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-12" parent="Z8Aswdf3FcaWcjXtzo5U-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ display_route(): str&lt;div&gt;+ display_flight_info():&amp;nbsp; void&lt;/div&gt;&lt;div&gt;+ calculate_base_fare(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;flight_distance_km: float&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;): float&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="240" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-13" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="DomesticFlight" vertex="1">
+          <mxGeometry height="130" width="240" x="147" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-14" parent="Z8Aswdf3FcaWcjXtzo5U-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+&amp;nbsp;domestic_tax_rate : float" vertex="1">
+          <mxGeometry height="24" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-15" parent="Z8Aswdf3FcaWcjXtzo5U-13" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="10" width="240" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-16" parent="Z8Aswdf3FcaWcjXtzo5U-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ display_flight_info(): void&lt;div&gt;+ calculate_final_fare(&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;flight_distance_km: float&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;)&lt;/span&gt;: float&lt;/div&gt;&lt;div&gt;+ announce_baggage_claim(): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="240" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-17" edge="1" parent="1" source="Z8Aswdf3FcaWcjXtzo5U-13" style="endArrow=block;startArrow=circlePlus;endFill=0;startFill=0;endSize=8;html=1;rounded=0;entryX=0.489;entryY=1.017;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="Z8Aswdf3FcaWcjXtzo5U-12" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="120" y="330" as="sourcePoint" />
+            <mxPoint x="390.53999999999996" y="257.99800000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-18" connectable="0" parent="Z8Aswdf3FcaWcjXtzo5U-17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="inherits" vertex="1">
+          <mxGeometry relative="1" x="0.0196" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-19" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="BasicAmenities" vertex="1">
+          <mxGeometry height="130" width="240" x="530" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-20" parent="Z8Aswdf3FcaWcjXtzo5U-19" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ snack_option : str&amp;nbsp;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&lt;/span&gt;&amp;nbsp;has_wifi : bool&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="34" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-21" parent="Z8Aswdf3FcaWcjXtzo5U-19" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="10" width="240" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-22" parent="Z8Aswdf3FcaWcjXtzo5U-19" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ serve_basic_refreshments(): void&lt;div&gt;+ distribute_reading_material(): void&lt;/div&gt;&lt;div&gt;+ show_safety_video(): void&lt;br&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="240" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-23" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="InternationalFlight" vertex="1">
+          <mxGeometry height="170" width="250" x="523" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-24" parent="Z8Aswdf3FcaWcjXtzo5U-23" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ international_tax_rate : float&lt;div&gt;+ meal_choice : str&lt;/div&gt;&lt;div&gt;+ passport_req : bool&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="54" width="250" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-25" parent="Z8Aswdf3FcaWcjXtzo5U-23" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="10" width="250" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-26" parent="Z8Aswdf3FcaWcjXtzo5U-23" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ display_flight_info(): void&lt;div&gt;+ calculate_final_fare(&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;flight_distance_km: float&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;)&lt;/span&gt;: float&lt;/div&gt;&lt;div&gt;+ offer_duty_free_service(): void&lt;/div&gt;&lt;div&gt;+ verify_customs_clearance(): bool&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="250" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-27" edge="1" parent="1" source="Z8Aswdf3FcaWcjXtzo5U-16" style="endArrow=block;startArrow=circlePlus;endFill=0;startFill=0;endSize=8;html=1;rounded=1;edgeStyle=elbowEdgeStyle;exitX=0.992;exitY=0.2;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="220" />
+            </Array>
+            <mxPoint x="270" y="362" as="sourcePoint" />
+            <mxPoint x="530" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-28" connectable="0" parent="Z8Aswdf3FcaWcjXtzo5U-27" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="inherits" vertex="1">
+          <mxGeometry relative="1" x="0.0196" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-29" edge="1" parent="1" source="Z8Aswdf3FcaWcjXtzo5U-23" style="endArrow=block;startArrow=circlePlus;endFill=0;startFill=0;endSize=8;html=1;rounded=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=elbowEdgeStyle;" target="Z8Aswdf3FcaWcjXtzo5U-10" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="263" y="394" as="sourcePoint" />
+            <mxPoint x="260" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-30" connectable="0" parent="Z8Aswdf3FcaWcjXtzo5U-29" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="inherits" vertex="1">
+          <mxGeometry relative="1" x="0.0196" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-31" edge="1" parent="1" source="Z8Aswdf3FcaWcjXtzo5U-23" style="endArrow=block;startArrow=circlePlus;endFill=0;startFill=0;endSize=8;html=1;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;elbow=vertical;entryX=0.492;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" target="Z8Aswdf3FcaWcjXtzo5U-22" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="723" y="434" as="sourcePoint" />
+            <mxPoint x="650" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-32" connectable="0" parent="Z8Aswdf3FcaWcjXtzo5U-31" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="inherits" vertex="1">
+          <mxGeometry relative="1" x="0.0196" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
