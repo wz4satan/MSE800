@@ -14,14 +14,7 @@ The system is built on four core classes, demonstrating a robust multiple-inheri
 * **`InternationalFlight` (Child Class 2):** Inherits from both `GeneralFlight` and `BasicAmenities`. It extends the system to handle complex international surcharges, passport verifications, duty-free shopping, full meal selections, and customs clearance data processing.
 
 ### Inheritance Structure (Text Representation)
-```text
-      GeneralFlight               BasicAmenities
-             \                      /
-              \                    /
-               \                  /
-            DomesticFlight   InternationalFlight
-
-```
+![alt text](PixPin_2026-05-31_17-38-21.jpg)
 
 ## Project Files
 
