@@ -63,7 +63,7 @@
         <mxCell id="Z8Aswdf3FcaWcjXtzo5U-26" parent="Z8Aswdf3FcaWcjXtzo5U-23" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ display_flight_info(): void&lt;div&gt;+ calculate_final_fare(&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;flight_distance_km: float&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;)&lt;/span&gt;: float&lt;/div&gt;&lt;div&gt;+ offer_duty_free_service(): void&lt;/div&gt;&lt;div&gt;+ verify_customs_clearance(): bool&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="250" y="90" as="geometry" />
         </mxCell>
-        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-27" edge="1" parent="1" source="Z8Aswdf3FcaWcjXtzo5U-16" style="endArrow=block;startArrow=circlePlus;endFill=0;startFill=0;endSize=8;html=1;rounded=1;edgeStyle=elbowEdgeStyle;exitX=1.008;exitY=0.2;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+        <mxCell id="Z8Aswdf3FcaWcjXtzo5U-27" edge="1" parent="1" source="Z8Aswdf3FcaWcjXtzo5U-16" style="endArrow=block;startArrow=circlePlus;endFill=0;startFill=0;endSize=8;html=1;rounded=1;edgeStyle=elbowEdgeStyle;exitX=0.992;exitY=0.2;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
           <mxGeometry relative="1" width="160" as="geometry">
             <Array as="points">
               <mxPoint x="420" y="220" />
