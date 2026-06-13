@@ -1,0 +1,230 @@
+<mxfile host="Electron">
+  <diagram id="page1" name="Function Call Tree">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Legend -->
+        <mxCell id="legend" value="Oval = Function, Arrow = calls" style="text;html=1;align=center;fontSize=11;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="400" y="10" width="300" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- ========== Level 0: main ========== -->
+        <mxCell id="n_main" value="main" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1565C0;fontColor=#FFFFFF;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="60" width="100" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- screen_register -->
+        <mxCell id="n_register" value="screen_register" style="ellipse;whiteSpace=wrap;html=1;fillColor=#42A5F5;fontColor=#FFFFFF;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="160" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_main_reg" edge="1" parent="1" source="n_main" target="n_register">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- screen_login -->
+        <mxCell id="n_login" value="screen_login" style="ellipse;whiteSpace=wrap;html=1;fillColor=#42A5F5;fontColor=#FFFFFF;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="250" y="160" width="110" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_main_log" edge="1" parent="1" source="n_main" target="n_login">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- screen_forgot_password -->
+        <mxCell id="n_forgot" value="screen_forgot_password" style="ellipse;whiteSpace=wrap;html=1;fillColor=#42A5F5;fontColor=#FFFFFF;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="410" y="160" width="140" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_main_fgt" edge="1" parent="1" source="n_main" target="n_forgot">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- screen_list_users -->
+        <mxCell id="n_list" value="screen_list_users" style="ellipse;whiteSpace=wrap;html=1;fillColor=#42A5F5;fontColor=#FFFFFF;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="600" y="160" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_main_lst" edge="1" parent="1" source="n_main" target="n_list">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- screen_exit -->
+        <mxCell id="n_exit" value="screen_exit" style="ellipse;whiteSpace=wrap;html=1;fillColor=#42A5F5;fontColor=#FFFFFF;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="770" y="160" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_main_ext" edge="1" parent="1" source="n_main" target="n_exit">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ========== Level 2: auth.py ========== -->
+        <mxCell id="h_auth" value="- auth.py -" style="text;html=1;align=center;fontSize=11;fontStyle=1;fontColor=#2E7D32;" vertex="1" parent="1">
+          <mxGeometry x="380" y="240" width="120" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="n_reg_fn" value="register" style="ellipse;whiteSpace=wrap;html=1;fillColor=#66BB6A;fontColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="100" y="280" width="100" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_reg_regfn" edge="1" parent="1" source="n_register" target="n_reg_fn">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="n_log_fn" value="login" style="ellipse;whiteSpace=wrap;html=1;fillColor=#66BB6A;fontColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="250" y="280" width="100" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_log_logfn" edge="1" parent="1" source="n_login" target="n_log_fn">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="n_fgt_fn" value="forgot_password" style="ellipse;whiteSpace=wrap;html=1;fillColor=#66BB6A;fontColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="400" y="280" width="120" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_fgt_fgtfn" edge="1" parent="1" source="n_forgot" target="n_fgt_fn">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="n_rst_fn" value="reset_password" style="ellipse;whiteSpace=wrap;html=1;fillColor=#66BB6A;fontColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="570" y="280" width="120" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_fgt_rstfn" edge="1" parent="1" source="n_forgot" target="n_rst_fn">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ========== Level 3: database.py ========== -->
+        <mxCell id="h_db" value="- database.py -" style="text;html=1;align=center;fontSize=11;fontStyle=1;fontColor=#E65100;" vertex="1" parent="1">
+          <mxGeometry x="380" y="370" width="120" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="n_db_create" value="create_user" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFB74D;fontColor=#333333;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="410" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_reg_create" edge="1" parent="1" source="n_reg_fn" target="n_db_create">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="n_db_get" value="get_user_by_email" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFB74D;fontColor=#333333;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="200" y="410" width="130" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_log_get" edge="1" parent="1" source="n_log_fn" target="n_db_get">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_fgt_get" edge="1" parent="1" source="n_fgt_fn" target="n_db_get">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_rst_get" edge="1" parent="1" source="n_rst_fn" target="n_db_get">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="n_db_update" value="update_password" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFB74D;fontColor=#333333;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="390" y="410" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_rst_upd" edge="1" parent="1" source="n_rst_fn" target="n_db_update">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="n_db_exists" value="email_exists" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFB74D;fontColor=#333333;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="560" y="410" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_reg_exists" edge="1" parent="1" source="n_reg_fn" target="n_db_exists">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="n_db_all" value="all_users" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFB74D;fontColor=#333333;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="720" y="410" width="90" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_list_all" edge="1" parent="1" source="n_list" target="n_db_all">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ========== Level 4: utils.py ========== -->
+        <mxCell id="h_util" value="- utils.py -" style="text;html=1;align=center;fontSize=11;fontStyle=1;fontColor=#6A1B9A;" vertex="1" parent="1">
+          <mxGeometry x="50" y="490" width="830" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="n_u_hash" value="hash_password" style="ellipse;whiteSpace=wrap;html=1;fillColor=#CE93D8;fontColor=#333333;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="530" width="110" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="n_u_email" value="validate_email" style="ellipse;whiteSpace=wrap;html=1;fillColor=#CE93D8;fontColor=#333333;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="210" y="530" width="110" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="n_u_pw" value="validate_password" style="ellipse;whiteSpace=wrap;html=1;fillColor=#CE93D8;fontColor=#333333;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="370" y="530" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="n_u_dob" value="validate_date_of_birth" style="ellipse;whiteSpace=wrap;html=1;fillColor=#CE93D8;fontColor=#333333;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="540" y="530" width="140" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="n_u_name" value="validate_full_name" style="ellipse;whiteSpace=wrap;html=1;fillColor=#CE93D8;fontColor=#333333;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="730" y="530" width="120" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- register -> utils arrows -->
+        <mxCell id="e_reg_uhash" edge="1" parent="1" source="n_reg_fn" target="n_u_hash">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_reg_uemail" edge="1" parent="1" source="n_reg_fn" target="n_u_email">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_reg_upw" edge="1" parent="1" source="n_reg_fn" target="n_u_pw">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_reg_udob" edge="1" parent="1" source="n_reg_fn" target="n_u_dob">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_reg_uname" edge="1" parent="1" source="n_reg_fn" target="n_u_name">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- login -> hash -->
+        <mxCell id="e_log_uhash" edge="1" parent="1" source="n_log_fn" target="n_u_hash">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- reset -> hash -->
+        <mxCell id="e_rst_uhash" edge="1" parent="1" source="n_rst_fn" target="n_u_hash">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ========== Level 5: models.py ========== -->
+        <mxCell id="h_model" value="- models.py -" style="text;html=1;align=center;fontSize=11;fontStyle=1;fontColor=#C62828;" vertex="1" parent="1">
+          <mxGeometry x="400" y="610" width="120" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="n_model" value="User (dataclass)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#EF9A9A;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="390" y="650" width="130" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_create_model" edge="1" parent="1" source="n_db_create" target="n_model">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_get_model" edge="1" parent="1" source="n_db_get" target="n_model">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ========== Level 6: SQLite ========== -->
+        <mxCell id="h_sql" value="- data/users.db -" style="text;html=1;align=center;fontSize=11;fontStyle=1;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="400" y="720" width="120" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="n_sql" value="SQLite (users table)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E0E0E0;fontColor=#333333;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="390" y="760" width="130" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_create_sql" edge="1" parent="1" source="n_db_create" target="n_sql">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_get_sql" edge="1" parent="1" source="n_db_get" target="n_sql">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_upd_sql" edge="1" parent="1" source="n_db_update" target="n_sql">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_exists_sql" edge="1" parent="1" source="n_db_exists" target="n_sql">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_all_sql" edge="1" parent="1" source="n_db_all" target="n_sql">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ========== Side notes ========== -->
+        <mxCell id="file_note" value="Project files:&#10;main.py     (UI layer)&#10;auth.py     (business logic)&#10;database.py (persistence)&#10;utils.py    (validation)&#10;models.py   (data model)&#10;data/       (SQLite DB)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;strokeColor=#FF9800;fontSize=10;fontColor=#E65100;" vertex="1" parent="1">
+          <mxGeometry x="50" y="650" width="160" height="130" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

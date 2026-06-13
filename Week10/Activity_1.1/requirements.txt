@@ -1,0 +1,7 @@
+# User Management CLI — requirements
+#
+# This project uses only Python standard library modules:
+#   - sqlite3, pathlib, re, datetime, sys, dataclasses, typing
+#
+# No third-party packages are required.
+# Python 3.8+ is recommended.
