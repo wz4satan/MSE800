@@ -71,40 +71,13 @@ def print_header(title: str) -> None:
 
 
 def pause() -> None:
-    """
-    Pause the program and wait for the user to press Enter.
-
-    try...except KeyboardInterrupt:
-    If the user presses Ctrl+C, input() raises a KeyboardInterrupt.
-    We catch it and call screen_exit() to exit cleanly instead of
-    showing an error traceback.
-    """
     try:
-        # input() waits for the user to press Enter
         input("\n  Press Enter to continue...")
     except KeyboardInterrupt:
-        # User pressed Ctrl+C → exit gracefully
         screen_exit()
 
 
 def prompt_choice(options: list) -> int:
-    """
-    Display a numbered list of options and return the user's choice.
-
-    Args:
-        options: A list of option strings, e.g. ["Register", "Login", "Exit"]
-
-    Returns:
-        The selected option number (1-based), or 0 if invalid.
-
-    Example:
-        If options = ["Register", "Login", "Exit"]:
-          [1] Register
-          [2] Login
-          [3] Exit
-        User enters 2 → returns 2
-    """
-    # enumerate yields (index, item) starting from 1
     for i, opt in enumerate(options, 1):
         print(f"  [{i}] {opt}")
 
@@ -142,23 +115,15 @@ def prompt_choice(options: list) -> int:
 
 
 def screen_register() -> None:
-    """
-    Registration screen.
-
-    Flow:
-    1. Ask for personal info (name, DOB, email, password)
-    2. Let the user pick a security question and enter an answer
-    3. Call auth.py's register() to process
-    4. Show success or failure message
-    """
+    """Register a new account: prompt for info, validate, store in DB."""
     print_header("Register a New Account")
 
     # .strip() removes leading/trailing whitespace
-    full_name = input("  Full Name: ").strip()
+    fn = input("  Full Name: ").strip()
     dob = input("  Date of Birth (YYYY-MM-DD): ").strip()
     email = input("  Email: ").strip()
 
-    # getpass.getpass() works like input() but doesn't show what you type
+    # getpass.getpass() works like input() but doesn't show what you type on the screen at all — it hides the input for privacy
     password = getpass.getpass("  Password: ")
 
     # Show security question list
@@ -176,13 +141,12 @@ def screen_register() -> None:
         return
 
     # Get the selected question text
-    secret_q = SECURITY_QUESTIONS[q_choice - 1]
-    secret_a = input("  Your answer: ").strip()
+    q = SECURITY_QUESTIONS[q_choice - 1]
+    a = input("  Your answer: ").strip()
 
     # Call auth.py's register() function
     # Returns (success, message, User_object)
-    # We use _ to ignore the User object (not needed here)
-    success, msg, _ = register(full_name, dob, email, password, secret_q, secret_a)
+    success, msg, _ = register(fn, dob, email, password, q, a)
 
     # Display result
     print(f"\n  {'✅' if success else '❌'} {msg}")
@@ -190,14 +154,6 @@ def screen_register() -> None:
 
 
 def screen_login() -> None:
-    """
-    Login screen.
-
-    Flow:
-    1. Ask for email and password
-    2. Call auth.py's login() to verify
-    3. On success, display user's profile info
-    """
     print_header("Login")
 
     email = input("  Email: ").strip()
@@ -217,13 +173,6 @@ def screen_login() -> None:
 
 
 def screen_forgot_password() -> None:
-    """
-    Forgot password screen.
-
-    Flow:
-    Step 1: Enter email, system verifies and shows the security question
-    Step 2: Answer the question correctly, then set a new password
-    """
     print_header("Forgot Password")
 
     # Step 1: Enter email
@@ -255,10 +204,6 @@ def screen_forgot_password() -> None:
 
 
 def screen_list_users() -> None:
-    """
-    Display all registered users.
-    Mainly for debugging and inspection.
-    """
     print_header("All Registered Users")
 
     # Call database.py's all_users() to get all users
@@ -278,11 +223,6 @@ def screen_list_users() -> None:
 
 
 def screen_exit() -> None:
-    """
-    Exit the program.
-    Shows a goodbye message and calls sys.exit(0) to terminate.
-    0 means "normal exit".
-    """
     print("\n  Thank you for using User Management CLI. Goodbye!\n")
     sys.exit(0)
 
@@ -315,17 +255,7 @@ MENU_ACTIONS = {
 
 
 def main() -> None:
-    """
-    Program entry point.
-
-    while True creates an infinite loop:
-    Show menu → wait for choice → execute action → back to menu
-    The loop only ends when the user chooses "Exit" or presses Ctrl+C.
-
-    try...except KeyboardInterrupt:
-    If the user presses Ctrl+C at any input() prompt,
-    it's caught here and the program exits cleanly.
-    """
+    """Program entry point: show menu, dispatch actions, loop until exit."""
     while True:
         try:
             # Show the main menu header
