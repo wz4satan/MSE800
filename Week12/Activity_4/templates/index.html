@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Upload Images</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}"/>
+    </head>
+    <body class="upload_page">
+        <h1 class="upload_title">Please upload an image</h1>
+   
+        <p>Please upload an image file (jpg, png, gif) from local storage to see it displayed below.</p>
+        <form class="upload_form" method="POST" enctype="multipart/form-data" action="{{ url_for('upload_file') }}">
+            <input type="file" name="my_image" accept="image/*" required>
+            <button class="upload_button" type="submit" >Upload</button>
+        </form>
+
+        {% if image_url %}
+        <div class="result-card">
+            <p class="success-text">✅ Successfully Upload！</p>
+            <p class="file-path">File URL: {{ image_url }}</p>
+            <img src="{{ image_url }}" class="uploaded-file" alt="Uploaded Image">
+        </div>
+        {% endif %}
+
+    </body>
+</html>
