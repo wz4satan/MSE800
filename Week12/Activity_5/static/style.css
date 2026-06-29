@@ -1,0 +1,212 @@
+/* ============================================
+   BMI Calculator - Soft Harmony Theme
+   ============================================ */
+
+/* --- Global setting --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.bmi_page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', 'Courier New', monospace;
+    background: linear-gradient(160deg, #e8e0f0, #f0eaf5, #e8e0f0);
+}
+
+/* --- Calculator container --- */
+.bmi_form_container {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 40px 45px;
+    max-width: 420px;
+    width: 90%;
+    box-shadow:
+        0 8px 32px rgba(120, 100, 160, 0.15),
+        0 2px 8px rgba(120, 100, 160, 0.08);
+    transition: all 0.3s ease;
+}
+
+/* --- Hover effect --- */
+.bmi_form_container:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 12px 40px rgba(120, 100, 160, 0.22),
+        0 4px 12px rgba(120, 100, 160, 0.12);
+}
+
+/* --- Title --- */
+.bmi_title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #5b4a7a;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(120, 100, 160, 0.15);
+}
+
+/* --- Label Text --- */
+.bmi_form_container p {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    padding-left: 10px;
+    border-left: 3px solid #8b7aaa;
+    color: #5b4a7a;
+}
+
+/* --- Form --- */
+.Weight_form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Input Box --- */
+.Weight_form input[type="number"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 18px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(120, 100, 160, 0.25);
+    border-radius: 10px;
+    color: #3d2f55;
+    font-size: 16px;
+    font-family: 'Segoe UI', monospace;
+    font-weight: 500;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.Weight_form input[type="number"]:hover {
+    border-color: rgba(120, 100, 160, 0.45);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.Weight_form input[type="number"]:focus {
+    border-color: #8b7aaa;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 0 3px rgba(120, 100, 160, 0.12);
+}
+
+.Weight_form input[type="number"]::placeholder {
+    color: #b5a8c9;
+}
+
+/* Remove the up and down arrows from the number input box */
+.Weight_form input[type="number"]::-webkit-inner-spin-button,
+.Weight_form input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* --- Submit Button --- */
+.bmi_calculator_button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 5px;
+    background: linear-gradient(135deg, #8b7aaa, #6b5b8a);
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bmi_calculator_button:hover {
+    background: linear-gradient(135deg, #9b8aba, #7b6b9a);
+    box-shadow: 0 4px 16px rgba(120, 100, 160, 0.35);
+    transform: translateY(-1px);
+}
+
+.bmi_calculator_button:active {
+    transform: translateY(0px);
+}
+
+/* --- Separation --- */
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(120, 100, 160, 0.25), transparent);
+    margin: 25px 0 20px;
+}
+
+/* --- Result Container --- */
+.bmi_result,
+.bmi_category {
+    text-align: center;
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    animation: resultGlowIn 0.5s ease;
+}
+
+.bmi_result {
+    font-size: 24px;
+    font-weight: 700;
+    color: #4a3a6a;
+    background: rgba(120, 100, 160, 0.08);
+    border: 1px solid rgba(120, 100, 160, 0.2);
+}
+
+.bmi_category {
+    font-size: 18px;
+    font-weight: 600;
+    color: #6b5b8a;
+    background: rgba(120, 100, 160, 0.06);
+    border: 1px solid rgba(120, 100, 160, 0.18);
+    margin-bottom: 20px;
+}
+
+/* --- Calculate Again Button --- */
+.calculate_again_button {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    border: 1px solid rgba(120, 100, 160, 0.3);
+    border-radius: 10px;
+    background: rgba(120, 100, 160, 0.05);
+    color: #5b4a7a;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.calculate_again_button:hover {
+    background: rgba(120, 100, 160, 0.12);
+    border-color: #8b7aaa;
+    box-shadow: 0 4px 12px rgba(120, 100, 160, 0.15);
+    transform: translateY(-1px);
+}
+
+/* --- Animation --- */
+@keyframes resultGlowIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+    60% {
+        transform: scale(1.02);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
